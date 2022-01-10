@@ -23,7 +23,7 @@ export class UserService {
   }
 
   update(update: any){
-    return this.http.put<any>(`${environment.apiUrl}/users/${update.id}`, update);
+    return this.http.put<any>(`${environment.apiUrl}/users/${update._id}`, update);
   }
 
   delete(id: number){

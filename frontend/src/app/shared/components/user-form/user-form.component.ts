@@ -61,7 +61,7 @@ export class UserFormComponent extends ControllerBase {
       return;
     }
   
-    if (this.dados.id) {
+    if (this.dados._id) {
       this.update();
     } else {
       this.create();
